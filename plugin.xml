@@ -47,8 +47,8 @@
             <preference name="android-minSdkVersion" value="15" />
         </config-file>
 
-        <source-file src="src/android/facebookconnect.xml" target-dir="app/src/main/res/values" />
-        <config-file target="app/src/main/res/values/facebookconnect.xml" parent="/*">
+        <source-file src="src/android/facebookconnect.xml" target-dir="app/src/main/res/values"  mode="merge"/>
+        <config-file target="app/src/main/res/values/facebookconnect.xml" mode="merge" parent="/*">
             <string name="fb_app_id">$APP_ID</string>
             <string name="fb_app_name">$APP_NAME</string>
         </config-file>
